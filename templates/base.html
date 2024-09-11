@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="">
+        <h1 class="text-center font-sans font-serif text-3xl mt-12"><a href="{% url 'home:home' %}" class="text-blue-800">Sahifa</a> {% block hname %}{% endblock hname %}</h1>
+    </nav>
+
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

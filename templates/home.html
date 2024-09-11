@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="relative min-h-screen flex items-start justify-center">
+    <div class="flex space-x-8 w-full max-w-lg mt-16">
+        <div class="text-center border border-indigo-600 border-l-8 rounded-lg shadow-lg p-6 w-full bg-white animate-slide-in-left">
+            <a href="{% url 'payment:unpaid' %}" class="block text-2xl font-semibold text-indigo-700 hover:text-indigo-900 transition duration-300 transform hover:scale-105">Qarzdorlik</a>
+        </div>
+        <div class="text-center border border-indigo-600 border-l-8 rounded-lg shadow-lg p-6 w-full bg-white animate-slide-in-right">
+            <a href="{% url 'payment:revenue' %}" class="block text-2xl font-semibold text-indigo-700 hover:text-indigo-900 transition duration-300 transform hover:scale-105">Daromad</a>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Keyframes for slide-in from left animation */
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for slide-in from right animation */
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply the slide-in animation from left */
+.animate-slide-in-left {
+    animation: slide-in-left 0.6s ease-out;
+}
+
+/* Apply the slide-in animation from right */
+.animate-slide-in-right {
+    animation: slide-in-right 0.6s ease-out;
+}
+
+/* Ensure buttons are side-by-side */
+.flex {
+    display: flex;
+    gap: 2rem; /* Adjust the gap between buttons if needed */
+}
+</style>
+{% endblock content %}

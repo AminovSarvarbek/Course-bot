@@ -1,0 +1,4 @@
+Malumotlarni kiritishda etibor berish kerak,
+
+1)1 ustundagi ustun nomlari o'zgartirilmasin va 
+2)ularga yoziladigan malumotlarni barchasini text formatda bo'lsin

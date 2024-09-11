@@ -1,0 +1,51 @@
+# Python cache va kompilyatsiya qilingan fayllar
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment papkalari
+# env/
+# venv/
+# .venv/
+# pipenv/
+# .Python
+# *.pyo
+
+# Django migratsiya fayllari
+**/migrations/
+!*/migrations/__init__.py  # faqat __init__.py faylini saqlab qolish
+
+# Django maxfiy fayllar va sozlamalar
+*.log
+*.pot
+local_settings.py
+db.sqlite3
+*.sqlite3
+
+# Django media fayllari
+media/
+*.media
+
+# Django static fayllari
+staticfiles/
+*.static
+
+# Enviroment fayllar
+# .env
+# *.env
+
+# IDE va text muharrirlari
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node.js papkasi (agar ishlatilgan bo'lsa)
+node_modules/
+
+# Aiogram uchun
+# Telegram bot sozlamalari yoki maxfiy ma'lumotlar saqlangan fayllar
+
+
+# Aiogram sessiya fayllari
+sessions/

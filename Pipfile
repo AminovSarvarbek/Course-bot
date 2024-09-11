@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+aiogram = "*"
+python-dateutil = "*"
+environs = "*"
+apscheduler = "*"
+openpyxl = "*"
+pandas = "*"
+requests = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
