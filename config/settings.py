@@ -92,11 +92,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'coursebotdb',
-        'USER': 'najmiddin',
-        'PASSWORD': 'najmiddin',
-        'HOST': '176.124.213.152',  # PostgreSQL serverining IP-manzili
-        'PORT': '5432',
+        'NAME': PG_DB_NAME,
+        'USER': PG_USER_NAME,
+        'PASSWORD': PG_PASSWORD,
+        'HOST': PG_HOST,  # PostgreSQL serverining IP-manzili
+        'PORT': PG_PORT,
     }
 }
 
